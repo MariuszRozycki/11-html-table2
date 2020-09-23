@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    border-collapse: separate;
+    border-spacing: 3px;
+    border: 2px solid gray;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+
+  th,
+  td {
+    text-align: center;
+    padding: 1px;
+    border: 3px solid grey;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+  }
+
+  th {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  td {
+    font-size: 18px;
+    text-align: left;
+  }
+</style>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Kolumna 1</th>
+        <th colspan="2">Kolumna 2</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>wiersz 1</td>
+        <td rowspan="2">wiersz 2</td>
+        <td>wiersz 3</td>
+      </tr>
+      <tr>
+        <td>wiersz 4</td>
+        <td>wiersz 6</td>
+      </tr>
+      <tr>
+        <td>wiersz 7</td>
+        <td>wiersz 8</td>
+        <td>wiersz 9</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
